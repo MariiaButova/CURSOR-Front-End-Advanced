@@ -19,7 +19,7 @@ const remainder = 500 - priceAllProdact;
 console.log(`Решта: ${remainder}`);
 const middlePrise = (priceAllProdact / 3).toFixed(2);
 console.log(`Середнє значення цін: ${middlePrise}`); 
-const discount = Math.round(Math.random()*100)
+const discount = Math.round(Math.random()*100);
 console.log(`Знижка: ${discount}%`);
 const numDiscount = discount / 100;
 const priceWithDiscount = (priceAllProdact - priceAllProdact * numDiscount).toFixed(2);
@@ -27,6 +27,6 @@ console.log(`Ціна зі знижкою: ${priceWithDiscount}`);
 const primeCost = (priceAllProdact / 2).toFixed(2);
 console.log(`Собівартість продуктів: ${primeCost}`);
 const netProfit = (primeCost - priceAllProdact * numDiscount).toFixed(2);
-console.log(`Чистий прибуток: ${netProfit}`)
+console.log(`Чистий прибуток: ${netProfit}`);
 
 
