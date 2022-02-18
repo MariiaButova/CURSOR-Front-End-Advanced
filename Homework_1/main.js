@@ -2,14 +2,14 @@
 
 const PRICE_BANAN = 15.678;
 const PRICE_ORANGE = 123.965;
-const PEICE_MANGO = 90.2345;
-const MAX_PRICE = Math.max(PRICE_BANAN, PRICE_ORANGE, PEICE_MANGO);
+const PRICE_MANGO = 90.2345;
+const MAX_PRICE = Math.max(PRICE_BANAN, PRICE_ORANGE, PRICE_MANGO);
 console.log(`Максимальна ціна: ${MAX_PRICE}`);
-const MIN_PRICE = Math.min(PRICE_BANAN, PRICE_ORANGE, PEICE_MANGO);
+const MIN_PRICE = Math.min(PRICE_BANAN, PRICE_ORANGE, PRICE_MANGO);
 console.log(`Мінімальна ціна: ${MIN_PRICE}`);
-const PRICE_ALL_PRODACT = PRICE_BANAN + PRICE_ORANGE + PEICE_MANGO;
+const PRICE_ALL_PRODACT = PRICE_BANAN + PRICE_ORANGE + PRICE_MANGO;
 console.log(`Вартість всіх продуктів: ${PRICE_ALL_PRODACT}`);
-const PRICE_WITHOUT_PENNIES = Math.floor(PRICE_BANAN) + Math.floor(PRICE_ORANGE) + Math.floor(PEICE_MANGO);
+const PRICE_WITHOUT_PENNIES = Math.floor(PRICE_BANAN) + Math.floor(PRICE_ORANGE) + Math.floor(PRICE_MANGO);
 console.log(`Вартіть всіх продуктів без копійок: ${PRICE_WITHOUT_PENNIES}`);
 const ROUNDED_PRICE = Math.round((PRICE_WITHOUT_PENNIES)/100)*100;
 console.log(`Вартійсть всіх продуктів округлена до сотень: ${ROUNDED_PRICE}`);
