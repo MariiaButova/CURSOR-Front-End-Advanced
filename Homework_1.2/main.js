@@ -16,7 +16,7 @@ const TOTAL_PRICE_WITHOUT_PENNIES = Math.floor(ORANGE_PRICE) + Math.floor(BANANA
 console.log(`Загальна вартість товарів без копійок: ${TOTAL_PRICE_WITHOUT_PENNIES}`);
 
 const ROUNDED_TOTAL_PRICE = Math.round( TOTAL_PRICE_WITHOUT_PENNIES / 100)*100;
-console.log(`Сума товарів округлена до сотень ${ROUNDED_TOTAL_PRICE}`);
+console.log(`Сума товарів округлена до сотень: ${ROUNDED_TOTAL_PRICE}`);
 
 const IS_EVEN_NUMBER = TOTAL_PRICE_WITHOUT_PENNIES %2 === 0 ;
 console.log(`Чи парне число: ${IS_EVEN_NUMBER}`);
