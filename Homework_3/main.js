@@ -24,8 +24,8 @@ console.log(`Функція 3: ${formatName("ПеТро")}`);
 
 //Функція 4
 function calcTax(number){
-  let arr = 1 - 0.195;
-  return number * arr;
+  let percent = 1 - 0.195;
+  return number * percent;
 }
 console.log(`Функція 4: ${calcTax(200)}`);
 
