@@ -1,7 +1,7 @@
 // Функція 1
 function getMaxDigit(number) {
     let arrayNumber = Array.from(String(number));
-    return Math.max(...arrayNumber)
+    return Math.max(...arrayNumber);
 }
 console.log(`Функція 1: ${getMaxDigit(12365487)}`)
 
@@ -38,14 +38,15 @@ console.log(`Функція 5: ${getRandomNumber(1, 10)}`);
 // Функція 6
 function countLetter(string, letter){
   let count = 0;
+  let userString = string.toLowerCase;
   for (let i = 0; i < string.length; i++) {
-    if (string.charAt(i) === letter) {
+    if (userString.charAt(i) === letter) {
       count += 1;
     }
   }
   return count;
 }
-console.log(`Функція 5: ${countLetter('trufgvold', "f")}`);
+console.log(`Функція 6: ${countLetter("а", "Асталавіста")}`);
 
 // Функція 7, 8
 function convertCurrency(sum) {
