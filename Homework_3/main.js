@@ -1,6 +1,6 @@
 // Функція 1
 function getMaxDigit(number) {
-    let arrayNumber = Array.from(String(number));
+    const arrayNumber = Array.from(String(number));
     return Math.max(...arrayNumber);
 }
 console.log(`Функція 1: ${getMaxDigit(12365487)}`)
@@ -24,7 +24,7 @@ console.log(`Функція 3: ${formatName("ПеТро")}`);
 
 //Функція 4
 function calcTax(number){
-  let percent = 1 - 0.195;
+  const percent = 1 - 0.195;
   return number * percent;
 }
 console.log(`Функція 4: ${calcTax(200)}`);
@@ -38,7 +38,7 @@ console.log(`Функція 5: ${getRandomNumber(1, 10)}`);
 // Функція 6
 function countLetter(string, letter){
   let count = 0;
-  let userString = string.toLowerCase;
+  const userString = string.toLowerCase();
   for (let i = 0; i < string.length; i++) {
     if (userString.charAt(i) === letter) {
       count += 1;
@@ -46,11 +46,11 @@ function countLetter(string, letter){
   }
   return count;
 }
-console.log(`Функція 6: ${countLetter("а", "Асталавіста")}`);
+console.log(`Функція 6: ${countLetter("Асталавіста", "а")}`);
 
 // Функція 7, 8
 function convertCurrency(sum) {
-  let userSum = sum.toUpperCase();
+  const userSum = sum.toUpperCase();
   let result
   if (userSum.includes('$')) {
     result = parseInt(userSum) * 32
