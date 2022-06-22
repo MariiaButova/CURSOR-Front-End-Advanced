@@ -10,7 +10,7 @@ function getNumberDegree(number, degree){
   let result = number;
   for(let i = 1 ; i < degree; i++)
   {
-    result = result * number;
+    result *= number;
   }
   return(result);
 }
@@ -18,7 +18,7 @@ console.log(`Функція 2: ${getNumberDegree(3, 4)}`);
 
 // Функція 3
 function formatName(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+  return string[0].toUpperCase() + string.slice(1).toLowerCase();
 }
 console.log(`Функція 3: ${formatName("ПеТро")}`);
 
@@ -74,10 +74,23 @@ function getRandomPassword(length = 8) {
 }
 console.log(`Функція 9: ${getRandomPassword(6)}`);
 
-// Функція 10
+// Функція 11
 function deleteLetters(letter, string) {
   return string.replaceAll(letter, '');
 }
-console.log(`Функція 10: ${deleteLetters("a", "blabalbala")}`)
+console.log(`Функція 11: ${deleteLetters("a", "blabalbala")}`)
 
+// Функція 12
+function isPalyndrom(str) {
+  const userString = str.toUpperCase().replace(/\s/g, '');
+  let len = userString.length;
+  let mid = Math.floor(len/2);
 
+  for ( let i = 0; i < mid; i++ ) {
+    if (userString[i] !== userString[len - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(`Функція 12: ${isPalyndrom('Я несу гусеня')}`);
