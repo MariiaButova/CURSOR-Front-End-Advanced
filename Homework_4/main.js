@@ -14,7 +14,7 @@ function getPair(students) {
              boys.push(students[i])
          }
      }
-     for (let i = 0; i < boys.length; i++) {
+     for (let i = 0; i < students.length / 2; i++) {
          pair.push([boys[i], girls[i]])
      }
      return pair;
