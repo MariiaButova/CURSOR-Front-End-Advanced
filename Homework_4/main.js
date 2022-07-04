@@ -23,14 +23,14 @@ function getPair(students) {
  const pairs = getPair(students)
 console.log(pairs)
 // 2
-function giveProject(themes) {
-    let work = [];
+function giveProject(pairs, themes) {
+    let project = [];
     for(let i = 0; i < pairs.length; i++) {
-        work.push([pairs[i].join(' i '), themes[i]])
+        project.push([pairs[i].join(' i '), themes[i]])
     }
-    return work
+    return project
 }
-const studentsProject = giveProject(themes);
+const studentsProject = giveProject(pairs, themes);
 console.log(studentsProject)
 
 // 3
